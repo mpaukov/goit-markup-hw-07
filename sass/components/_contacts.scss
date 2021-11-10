@@ -1,0 +1,17 @@
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+
+  @extend %link;
+  color: $current-text-color;
+ 
+}

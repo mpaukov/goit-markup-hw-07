@@ -1,0 +1,16 @@
+%navigation__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.envelope {
+  @extend %navigation__icon;
+  width: 16px;
+  height: 12px;
+}
+
+.smartphone {
+  @extend %navigation__icon;
+  width: 10px;
+  height: 16px;
+}

@@ -1,0 +1,22 @@
+.navigation {
+  display: flex;
+  margin-right: auto;
+}
+
+.navigation__items {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation__link {
+  @extend %link;
+  color: $current-title-color;
+
+  &--current {
+    color: $accent-color;
+  }
+}

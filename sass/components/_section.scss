@@ -1,0 +1,10 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  text-align: center;
+
+  &--no-padding-top {
+    padding-top: 0;
+  }
+}
