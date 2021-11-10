@@ -11,7 +11,15 @@
   display: flex;
   align-items: center;
 
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   @extend %link;
   color: $current-text-color;
- 
+  transition: color $duration $function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }

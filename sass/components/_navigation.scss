@@ -14,9 +14,36 @@
 
 .navigation__link {
   @extend %link;
+
+  display: block;
+  position: relative;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: $current-title-color;
+  transition: color $duration $function;
 
   &--current {
+    color: $accent-color;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: $accent-color;
+      border-radius: 2px;
+    }
+  }
+
+  &:hover,
+  &:focus {
     color: $accent-color;
   }
 }
