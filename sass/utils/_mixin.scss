@@ -1,0 +1,4 @@
+@mixin icon($icon-width, $icon-height) {
+  width: $icon-width;
+  height: $icon-height;
+}

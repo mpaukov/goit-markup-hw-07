@@ -5,12 +5,20 @@
 
 .envelope {
   @extend %navigation__icon;
-  width: 16px;
-  height: 12px;
+  @include icon(16px, 12px);
 }
 
 .smartphone {
   @extend %navigation__icon;
-  width: 10px;
-  height: 16px;
+  @include icon(10px, 16px);
+}
+
+.antenna,
+.clock,
+.diagram,
+.astronaut {
+  @include icon(70px, 70px);
+
+  --current-icon-color: #{$current-title-color};
+  --accent-icon-color: #{$accent-color};
 }
