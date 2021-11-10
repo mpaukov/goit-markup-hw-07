@@ -124,6 +124,12 @@ body {
   fill: currentColor;
 }
 
+.icon-client {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
 .hero__button {
   cursor: pointer;
   min-height: 38px;
@@ -174,7 +180,7 @@ body {
   height: auto;
 }
 
-.feature__heading, .about__heading, .team__heading {
+.feature__heading, .about__heading, .team__heading, .clients__heading {
   margin: 0 0 50px 0;
   color: #212121;
   font-weight: 700;
@@ -471,5 +477,32 @@ body {
   padding: 0;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.clients__list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
 }
 /*# sourceMappingURL=main.css.map */

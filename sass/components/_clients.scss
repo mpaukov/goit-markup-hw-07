@@ -1,0 +1,26 @@
+.clients__heading {
+  @extend %heading;
+}
+
+.clients {
+  display: flex;
+}
+
+.clients__list {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid $social-passive-color;
+  border-radius: 4px;
+
+  color: $social-passive-color;
+}
