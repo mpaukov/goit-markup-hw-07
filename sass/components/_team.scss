@@ -1,0 +1,8 @@
+.team__heading {
+  @extend %heading;
+}
+
+.team__items {
+  display: flex;
+  align-items: center;
+}
