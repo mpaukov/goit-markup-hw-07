@@ -89,6 +89,41 @@ body {
   --accent-icon-color: #2196f3;
 }
 
+.icon-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icon-social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+
+.icon-social__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 .hero__button {
   cursor: pointer;
   min-height: 38px;
@@ -396,12 +431,45 @@ body {
   text-transform: uppercase;
 }
 
-.team__items {
+.team__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.team__card {
+  display: block;
+  background-color: #ffffff;
+}
+
+.team__card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team__card-thumb {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__card-title {
+  margin: 0 0 10px 0;
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.team__card-text {
+  margin: 0 0 16px 0;
+  padding: 0;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 /*# sourceMappingURL=main.css.map */

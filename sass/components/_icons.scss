@@ -22,3 +22,29 @@
   --current-icon-color: #{$current-title-color};
   --accent-icon-color: #{$accent-color};
 }
+
+.icon-social {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.icon-social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: $social-passive-color;
+}
+
+.icon-social__icon {
+  @include icon(20px, 20px);
+  fill: currentColor;
+}
