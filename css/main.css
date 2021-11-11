@@ -2,7 +2,6 @@ body {
   font-family: Roboto, sans-serif;
   color: #757575;
   background-color: #ffffff;
-  padding-top: 80px;
 }
 
 .links {
@@ -123,7 +122,7 @@ body {
   margin-left: 10px;
 }
 
-.button__hero, .button__send {
+.button__hero, .button__send, .button__filter {
   cursor: pointer;
   min-height: 38px;
   padding: 6px 22px;
@@ -194,6 +193,13 @@ body {
 
 .button__send:hover, .button__send:focus {
   background-color: #188ce8;
+}
+
+.button__filter:hover, .button__filter:focus, .button__filter--active {
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .images {
@@ -644,5 +650,130 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio-card {
+  width: 370px;
+  background-color: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0px 0px 4px 4px;
+  -webkit-transition: -webkit-box-shadow 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 2250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.portfolio-card:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.portfolio-card:hover, .portfolio-card:focus, .portfolio-card:focus-within {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-card__aside {
+  position: relative;
+  height: 294px;
+  overflow: hidden;
+}
+
+.portfolio-card__body {
+  border-top: 0;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
+
+.portfolio-card__title {
+  margin: 0 0 4px 0;
+  color: #212121;
+  text-align: left;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-card__text {
+  margin: 0;
+  color: #757575;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  display: flexbox;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
+  opacity: 0;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+  -webkit-transition-duration: 2250ms;
+          transition-duration: 2250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+}
+
+.portfolio-card:hover .overlay,
+.portfolio-card:focus .overlay,
+.portfolio-card:focus-within .overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.overlay__text {
+  margin: 0;
+  padding: 63px 24px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-align: left;
 }
 /*# sourceMappingURL=main.css.map */
