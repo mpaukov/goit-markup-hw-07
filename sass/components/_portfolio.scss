@@ -9,8 +9,8 @@
 
   background-color: $current-light-color;
   box-shadow: none;
-  border-radius: 0px 0px 4px 4px;
 
+  border: 1px solid $border-color;
   transition: box-shadow $duration $function;
 
   &:not(:nth-child(3n)) {
@@ -25,6 +25,7 @@
   &:focus-within {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 0px 0px 4px 4px;
   }
 }
 
@@ -37,8 +38,6 @@
 .portfolio-card__body {
   border-top: 0;
   padding: 20px 24px;
-
-  border: 1px solid $border-color;
 }
 
 .portfolio-card__title {
