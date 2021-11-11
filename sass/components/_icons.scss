@@ -23,31 +23,14 @@
   --accent-icon-color: #{$accent-color};
 }
 
-.icon-social {
-  display: flex;
-  justify-content: center;
-}
-
-.icon-social__item {
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
-}
-
-.icon-social__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: $social-passive-color;
-}
-
-.icon-social__icon {
+.icon__social {
   @include icon(20px, 20px);
 }
 
-.icon-client {
+.icon__client {
   @include icon(106px, 60px);
+}
+
+.icon__send {
+  @include icon(24px, 24px);
 }

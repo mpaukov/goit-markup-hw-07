@@ -1,0 +1,18 @@
+.js-speaker-form__input {
+  width: 358px;
+  height: 50px;
+  margin-right: 8px;
+  padding-left: 16px;
+
+  line-height: 20px;
+  letter-spacing: 0.03em;
+
+  color: $footer-link-color;
+
+  background-color: $minor-background-color;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}

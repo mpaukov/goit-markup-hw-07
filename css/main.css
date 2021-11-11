@@ -50,6 +50,15 @@ body {
   padding: 0;
 }
 
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -72,11 +81,13 @@ body {
 .envelope {
   width: 16px;
   height: 12px;
+  fill: currentColor;
 }
 
 .smartphone {
   width: 10px;
   height: 16px;
+  fill: currentColor;
 }
 
 .antenna,
@@ -85,48 +96,26 @@ body {
 .astronaut {
   width: 70px;
   height: 70px;
+  fill: currentColor;
   --current-icon-color: #212121;
   --accent-icon-color: #2196f3;
 }
 
-.icon-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.icon-social__item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.icon-social__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: #afb1b8;
-}
-
-.icon-social__icon {
+.icon__social {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
 
-.icon-client {
+.icon__client {
   width: 106px;
   height: 60px;
+  fill: currentColor;
+}
+
+.icon__send {
+  width: 24px;
+  height: 24px;
   fill: currentColor;
 }
 
@@ -273,6 +262,7 @@ body {
 
 .logo--footer {
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .logo:hover.logo--header, .logo:focus.logo--header, .logo:hover.logo--footer, .logo:focus.logo--footer {
@@ -479,6 +469,40 @@ body {
   letter-spacing: 0.03em;
 }
 
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+
+.social__link--footer {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .clients {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -504,5 +528,64 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
+}
+
+.footer {
+  padding: 60px 0;
+  background-color: #2f303a;
+}
+
+.footer__address {
+  display: block;
+  padding: 0;
+  margin-bottom: 9px;
+  color: #ffffff;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__thumb {
+  margin-right: 70px;
+}
+
+.footer__thumb--social {
+  margin-right: auto;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.js-speaker-form__input {
+  width: 358px;
+  height: 50px;
+  margin-right: 8px;
+  padding-left: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 /*# sourceMappingURL=main.css.map */
