@@ -46,10 +46,8 @@
 
 .icon-social__icon {
   @include icon(20px, 20px);
-  fill: currentColor;
 }
 
 .icon-client {
   @include icon(106px, 60px);
-  fill: currentColor;
 }
