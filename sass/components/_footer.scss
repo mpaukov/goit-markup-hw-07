@@ -21,10 +21,18 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $footer-link-color;
+
+  transition: color $duration $function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .footer__thumb {
   margin-right: 70px;
+
   &--social {
     margin-right: auto;
   }
@@ -35,6 +43,8 @@
 }
 
 .footer__text {
+  display: block;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;

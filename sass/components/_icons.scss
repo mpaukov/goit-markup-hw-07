@@ -33,4 +33,8 @@
 
 .icon__send {
   @include icon(24px, 24px);
+
+  &--append {
+    margin-left: 10px;
+  }
 }
