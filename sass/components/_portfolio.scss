@@ -10,7 +10,6 @@
   background-color: $current-light-color;
   box-shadow: none;
 
-  border: 1px solid $border-color;
   transition: box-shadow $duration $function;
 
   &:not(:nth-child(3n)) {
@@ -38,6 +37,8 @@
 .portfolio-card__body {
   border-top: 0;
   padding: 20px 24px;
+  border: 1px solid $border-color;
+  border-top: none;
 }
 
 .portfolio-card__title {
