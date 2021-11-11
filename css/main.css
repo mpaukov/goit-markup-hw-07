@@ -188,6 +188,8 @@ body {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
 }
 
 .button__send:hover, .button__send:focus {
@@ -527,11 +529,20 @@ body {
   height: 44px;
   border-radius: 50%;
   color: #afb1b8;
+  -webkit-transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social__link--footer {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition: background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__link:hover, .social__link:focus {
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .clients {
@@ -559,6 +570,13 @@ body {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
+  -webkit-transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1), border 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1), border 2250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__item:hover, .clients__item:focus {
+  border: 1px solid #2196f3;
+  color: #2196f3;
 }
 
 .footer {

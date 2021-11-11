@@ -17,9 +17,17 @@
   height: 44px;
   border-radius: 50%;
   color: $social-passive-color;
+  transition: color $duration $function, background-color $duration $function;
 
   &--footer {
     color: $current-light-color;
     background-color: $social-passive-background-color;
+    transition: background-color $duration $function;
+  }
+
+  &:hover,
+  &:focus {
+    color: $current-light-color;
+    background-color: $accent-color;
   }
 }
