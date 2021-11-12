@@ -12,6 +12,7 @@ $border-color: #eeeeee;
 
 $current-text-color: #757575;
 $current-title-color: #212121;
+$current-placeholder-color: rgba(117, 117, 117, 0.5);
 $accent-color: #2196f3;
 $minor-accent-color: #188ce8;
 
@@ -20,8 +21,8 @@ $social-passive-color: #afb1b8;
 $footer-link-color: rgba(255, 255, 255, 0.6);
 $social-passive-background-color: rgba(255, 255, 255, 0.1);
 
-$duration: 2250ms;
-$function: cubic-bezier(0.4, 0, 0.2, 1);
-
 $backdrop-overlay-color: rgba(0, 0, 0, 0.2);
 $overlay-card-color: rgba(33, 150, 243, 0.9);
+
+$duration: 250ms;
+$function: cubic-bezier(0.4, 0, 0.2, 1);

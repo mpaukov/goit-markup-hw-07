@@ -38,3 +38,52 @@
     margin-left: 10px;
   }
 }
+
+.icon__close {
+  @include icon(18px, 18px);
+}
+
+.icon__modal {
+  @include icon(18px, 18px);
+
+  &--position {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(12px, 28px);
+
+    transition: fill $duration $function;
+  }
+
+  .modal__input:focus-visible + &,
+  .modal__input:focus + &,
+  .modal__textarea:focus-visible + &,
+  .modal__textarea:focus + & {
+    fill: $accent-color;
+  }
+}
+
+.icon__check {
+  @include icon(16px, 15px);
+
+  &--state {
+    margin-right: 7px;
+
+    border: 2px solid $current-title-color;
+    border-radius: 4px;
+    background-color: $current-light-color;
+    transition-property: background-color, border;
+    transition-duration: $duration;
+    transition-timing-function: $function;
+
+    .modal__checkbox:checked + & {
+      border: 2px solid transparent;
+      background-color: $accent-color;
+    }
+
+    .modal__label:last-of-type:hover > &,
+    .modal__label:last-of-type:focus-within > & {
+      border: 2px solid $accent-color;
+    }
+  }
+}
